@@ -3,108 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="PLP Advanced HTML5 Assignment – Demonstrates structured content, media embedding, and accessible form design with native validation." />
-  <meta name="keywords" content="HTML5, forms, accessibility, validation, media, PLP assignment" />
-  <meta name="author" content="Gervásio" />
-  <title>PLP Advanced HTML5 – Enhanced Content & Form</title>
+  <title>Advanced HTML5 Assignment</title>
 </head>
 <body>
   <header>
-    <h1>PLP Advanced HTML5 Assignment</h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="#content">Content Showcase</a></li>
-        <li><a href="#form">User Form</a></li>
-      </ul>
-    </nav>
+    <h1>Advanced HTML5 Assignment</h1>
   </header>
 
   <main>
-    <!-- Section: Lists, Tables, and Media -->
-    <section id="content">
-      <h2>Content Showcase</h2>
-
-      <h3>📋 Skills List</h3>
+    <section>
+      <h2>List Example</h2>
       <ul>
-        <li>UX & Emotional Architecture</li>
-        <li>SQL Documentation & Query Design</li>
-        <li>AI-Powered Educational Tools</li>
+        <li>Semantic HTML</li>
+        <li>Form Validation</li>
+        <li>Accessible Design</li>
       </ul>
+    </section>
 
-      <h3>📊 Project Table</h3>
+    <section>
+      <h2>Table Example</h2>
       <table>
-        <caption>Recent Projects</caption>
         <thead>
           <tr>
             <th>Project</th>
-            <th>Category</th>
             <th>Status</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Video Editing Platform</td>
-            <td>AI & Education</td>
-            <td>Prototype</td>
+            <td>HTML5 Form</td>
+            <td>Completed</td>
           </tr>
           <tr>
-            <td>SQL Submission Framework</td>
-            <td>Technical Documentation</td>
-            <td>Completed</td>
+            <td>Content Embedding</td>
+            <td>In Progress</td>
           </tr>
         </tbody>
       </table>
-
-      <h3>🎥 Embedded Media</h3>
-      <figure>
-        <video controls width="400">
-          <source src="demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <figcaption>Demo of the AI-powered video editor</figcaption>
-      </figure>
     </section>
 
-    <!-- Section: HTML5 Form -->
-    <section id="form">
-      <h2>User Registration Form</h2>
-      <form aria-label="User registration form">
-        <fieldset>
-          <legend>Personal Information</legend>
+    <section>
+      <h2>Embedded Media</h2>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/dD2EISBDjWM"
+        title="HTML5 Tutorial"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </section>
 
-          <label for="fullName">Full Name:</label>
-          <input type="text" id="fullName" name="fullName" placeholder="e.g. Gervásio Magul" required autocomplete="name" />
+    <section>
+      <h2>Form Section</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="e.g. gervasio@example.com" required autocomplete="email" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-          <label for="age">Age:</label>
-          <input type="number" id="age" name="age" min="18" max="99" required />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required />
 
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" minlength="5" maxlength="15" pattern="[A-Za-z0-9]+" required />
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+          <option value="">Select</option>
+          <option value="student">Student</option>
+          <option value="mentor">Mentor</option>
+        </select>
 
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" minlength="8" required />
-
-          <label for="bio">Short Bio:</label>
-          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about your background..." required></textarea>
-        </fieldset>
-
-        <fieldset>
-          <legend>Preferences</legend>
-
-          <label for="role">Select Role:</label>
-          <select id="role" name="role" required>
-            <option value="">--Choose--</option>
-            <option value="student">Student</option>
-            <option value="mentor">Mentor</option>
-            <option value="guest">Guest</option>
-          </select>
-
-          <label for="newsletter">Subscribe to newsletter:</label>
-          <input type="checkbox" id="newsletter" name="newsletter" checked readonly />
-        </fieldset>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" rows="4" required></textarea>
 
         <button type="submit">Submit</button>
       </form>
@@ -112,7 +80,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Gervásio. All rights reserved.</p>
+    <p>&copy; 2025</p>
   </footer>
 </body>
 </html>
